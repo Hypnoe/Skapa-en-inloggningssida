@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script defer src="script.js"></script>
+    
     <title>Inloggningssida</title>
 </head>
 <body> 
-    <h1>Välkommen!</h1>
-     
-   <h3>Användarnamn</h3> <input type="text"> <h3>Lösenord</h3> <input type="text"> <button>Logga in</button>
-<script src="script.js"></script>
+    <div id="logIn">
+        <h1>Welcome</h1>
+    
+ 
+
+    <input type="text" class="login-form-field"  id="namn" placeholder="Ange användarnamn">  
+    <input type="password" class="login-form-field"  id="lösen" placeholder="Ange lösenord">  
+    <button  value="login" id="login-form-submit">Logga in</button> 
+   
+
+<div id="varning"></div>
+
+</div> 
+<div id="page1"> 
+    <h1>Du är nu inloggad</h1> 
+    <button onclick="logOut()" > Logga ut</button>
+</div> 
+
 </body>
-</html>
+</html>   
+
+
+
