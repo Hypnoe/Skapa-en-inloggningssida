@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <script defer src="script.js"></script>
-    
-    <title>Inloggningssida</title>
-</head>
-<body> 
-    <div id="logIn">
-        <h1>Welcome</h1>
-    
- 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script defer src="script.js"></script>
 
-    <input type="text" class="login-form-field"  id="namn" placeholder="Ange användarnamn">  
-    <input type="password" class="login-form-field"  id="lösen" placeholder="Ange lösenord">  
-    <button  value="login" id="login-form-submit">Logga in</button> 
-   
-
-<div id="varning"></div>
-
-</div> 
-<div id="page1"> 
-    <h1>Du är nu inloggad</h1> 
-    <button onclick="logOut()" > Logga ut</button>
-</div> 
-
-</body>
-</html>   
-
+        <title>Inloggningssida</title>
+    </head>
+    <body> 
+        <div id="logIn" style="display: none">
+            <h1>Välkommen</h1>
+            <input type="text" id="namn" placeholder="Ange användarnamn">
+            <input type="password" id="lösen" placeholder="Ange lösenord">
+            <button  value="login" id="login-form-submit" onclick="logIn()">Logga in</button>
+        </div>
+        <div id="varning" style="display: none"> 
+            <button onclick="tillbaka()"> Tillbaka</button> 
+            <h2>Fel Användarnamn eller lösenord</h2> 
+            
+        </div> 
+        
+        <div id="page1" style="display: none"> 
+            <h1>Du är nu inloggad</h1> 
+            <button onclick="logOut()" > Logga ut</button>
+        </div> 
+    </body>
+</html>
 
 
