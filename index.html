@@ -13,18 +13,20 @@
             <h1>Välkommen</h1>
             <input type="text" id="namn" placeholder="Ange användarnamn">
             <input type="password" id="lösen" placeholder="Ange lösenord">
-            <button  value="login" id="login-form-submit" onclick="logIn()">Logga in</button>
+            <button  value="login" id="login-form-submit" onclick="logIn()">Logga in <i class="fas fa-sign-in-alt"></i></button>
         </div>
         <div id="varning" style="display: none"> 
-            <button onclick="tillbaka()"> Tillbaka</button> 
-            <h2>Fel Användarnamn eller lösenord</h2> 
+            <button onclick="tillbaka()"> Tillbaka <i class="far fa-hand-point-left"></i></button> 
+            <h2>Fel Användarnamn eller lösenord <i class="fas fa-times-circle"></i></h2>
             
         </div> 
         
         <div id="page1" style="display: none"> 
-            <h1>Du är nu inloggad</h1> 
-            <button onclick="logOut()" > Logga ut</button>
+            <h1>Du är nu inloggad <i class="fas fa-user-check"></i></h1> 
+            <button onclick="logOut()" > Logga ut</button> 
+            <i class="fab fa-accessible-icon"></i>
         </div> 
+        <script src="https://kit.fontawesome.com/87aa04ccfc.js" crossorigin="anonymous"></script>
     </body>
 </html>
 
